@@ -1,14 +1,15 @@
 package com.example.demo.entity;
 
-import jakarta.persistance.Entity;
-import jakarta.persistance.GeneratedValue;
-import jakarta.persistance.GenerationType;
-import jakarta.persistance.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
+
 public class Stuentity{
-    @Id    //unqiue value
-    @GeneratedValue(stratergy=GenerationType.IDENTITY)   //identity follow 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
@@ -41,11 +42,14 @@ public class Stuentity{
     public void setCgpa(float cgpa){
         this.cgpa=cgpa;
     }
-    public Stuentity(Long id, String name, String email, float cgpa){
+    public Stuentity(Long id,String name,String email,float cgpa){
         this.id=id;
         this.name=name;
         this.email=email;
         this.cgpa=cgpa;
+
     }
-    
+    public Stuentity(){
+        
+    }
 }
