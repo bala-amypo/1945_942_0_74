@@ -8,7 +8,7 @@ import jakarta.persistance.Id;
 @Entity
 public class Stuentity{
     @Id    //unqiue value
-    @GeneratedValue(stratergy=GenerationType.IDENTITY)
+    @GeneratedValue(stratergy=GenerationType.IDENTITY)   //identity follow 
     private Long id;
     private String name;
     private String email;
