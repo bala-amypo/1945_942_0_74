@@ -10,7 +10,7 @@ public class StudentServiceImple implements StudentService{
     // public StudentServiceImple(StudentRepository studentRepository){
     //     this.StudentRepository=studentRepository;
     // }
-    Stude
+    StudentRepository studentRepository;
 
     public Student saveStudent(Student student){
         return studentRepository.save(student);
