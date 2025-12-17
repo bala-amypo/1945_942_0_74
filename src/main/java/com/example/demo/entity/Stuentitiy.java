@@ -7,7 +7,7 @@ import jakarta.persistance.Id;
 
 @Entity
 public class Stuentity{
-    @Id
+    @Id    //unqiue value
     @GeneratedValue(stratergy=GenerationType.IDENTITY)
     private Long id;
     private String name;
