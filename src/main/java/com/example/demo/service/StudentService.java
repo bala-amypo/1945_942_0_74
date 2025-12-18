@@ -1,7 +1,10 @@
-package com.example.demo.repository;
+package com.example.PracticeProject.service;
 
-import com.example.demo.entity.Student;
+import org.springframework.stereotype.Service;
 
-public class StudentService{
-    Student saveStudent(Student student);
+import com.example.PracticeProject.entity.StuEnt;
+
+@Service
+public interface StudentService {
+    StuEnt saveStudent(StuEnt student);
 }
